@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85da0d7fc3c35f44d89ca3fb294fb10f, type: 3}
   m_Name: BuildTimestamp
   m_EditorClassIdentifier: 
-  timestamp: 2000/01/01 00:00:00
+  timestamp: 2999/12/31 23:59:59
