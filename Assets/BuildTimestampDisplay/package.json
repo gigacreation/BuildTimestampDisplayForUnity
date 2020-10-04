@@ -1,0 +1,16 @@
+{
+    "name": "com.gigacee.build-timestamp-display-for-unity",
+    "version": "1.0.0",
+    "displayName": "Build timestamp display for Unity",
+    "description": "Display the timestamp the game was built.",
+    "unity": "2019.4",
+    "keywords": [
+        "Build",
+        "Timestamp"
+    ],
+    "author": {
+        "name": "Gigacee",
+        "email": "gigacee@gigacreation.jp",
+        "url": "https://www.gigacreation.jp/"
+    }
+}
