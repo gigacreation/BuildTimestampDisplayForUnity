@@ -1,0 +1,17 @@
+{
+    "name": "BuildTimestampDisplay.Editor",
+    "references": [
+        "GUID:61abea01cd112fb42857d3ad87290142"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
