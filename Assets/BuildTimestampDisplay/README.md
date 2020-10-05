@@ -18,7 +18,7 @@ You can also use this value for any other purpose you like.
 
 ### Unity Package Manager
 
-<https://github.com/Gigacee/build-timestamp-display-for-unity.git?path=Assets/BuildTimestampDisplay>
+`https://github.com/Gigacee/build-timestamp-display-for-unity.git?path=Assets/BuildTimestampDisplay`
 
 ### Manual
 
