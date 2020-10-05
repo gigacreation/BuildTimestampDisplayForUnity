@@ -4,6 +4,9 @@
     "displayName": "Build timestamp display",
     "description": "Display the timestamp the game was built.",
     "unity": "2019.4",
+    "dependencies": {
+        "com.unity.ugui": "1.0.0"
+    },
     "keywords": [
         "Build",
         "Timestamp"
