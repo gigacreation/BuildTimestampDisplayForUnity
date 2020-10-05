@@ -18,9 +18,14 @@
     },
     "samples": [
         {
-            "displayName": "Sample",
+            "displayName": "Sample1",
             "description": "Display the timestamp in the lower left corner of the screen.",
-            "path": "Samples~"
+            "path": "Samples~/Sample1"
+        },
+        {
+            "displayName": "Sample2 - TextMesh Pro",
+            "description": "Display the timestamp in the lower left corner of the screen by using TextMesh Pro.",
+            "path": "Samples~/Sample2_TextMeshPro"
         }
     ]
 }
