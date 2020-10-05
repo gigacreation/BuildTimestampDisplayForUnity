@@ -1,7 +1,7 @@
 {
     "name": "com.gigacee.build-timestamp-display-for-unity",
     "version": "1.0.0",
-    "displayName": "Build timestamp display for Unity",
+    "displayName": "Build timestamp display",
     "description": "Display the timestamp the game was built.",
     "unity": "2019.4",
     "keywords": [
@@ -17,7 +17,7 @@
         {
             "displayName": "Sample",
             "description": "Display the timestamp in the lower left corner of the screen.",
-            "path": "Samples/BuildTimestampDisplay"
+            "path": "Samples~/BuildTimestampDisplay"
         }
     ]
 }
