@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using UnityEditor;
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
@@ -8,18 +9,24 @@ namespace BuildTimestampDisplay.Editor
 {
     public class BuildTimestampRecorder : IPreprocessBuildWithReport
     {
-        const string DEST_FILE_PATH = "Assets/BuildTimestampDisplay/BuildTimestamp.asset";
+        const string DEST_DIR_PATH = "Assets/BuildTimestampDisplay";
+        const string DEST_FILENAME = "BuildTimestamp.asset";
 
         public int callbackOrder => 0;
 
         public void OnPreprocessBuild(BuildReport report)
         {
-            var buildInfo = AssetDatabase.LoadAssetAtPath<BuildTimestamp>(DEST_FILE_PATH);
+            if (!Directory.Exists(DEST_DIR_PATH))
+            {
+                Directory.CreateDirectory(DEST_DIR_PATH);
+            }
+
+            var buildInfo = AssetDatabase.LoadAssetAtPath<BuildTimestamp>($"{DEST_DIR_PATH}/{DEST_FILENAME}");
 
             if (buildInfo == null)
             {
                 buildInfo = ScriptableObject.CreateInstance<BuildTimestamp>();
-                AssetDatabase.CreateAsset(buildInfo, DEST_FILE_PATH);
+                AssetDatabase.CreateAsset(buildInfo, $"{DEST_DIR_PATH}/{DEST_FILENAME}");
             }
 
             var localTime = TimeZoneInfo.ConvertTimeFromUtc(report.summary.buildStartedAt, TimeZoneInfo.Local);

@@ -16,14 +16,14 @@ Display the timestamp the game was built.
 
 ---
 
-:note: You can also use `BuildTimestamp.asset` for any other purpose you like :wink:
+:memo: You can also use `BuildTimestamp.asset` for any other purpose you like :wink:
 
 ## Installation
 
 ### Package Manager
 
-`https://github.com/Gigacee/build-timestamp-display-for-unity.git?path=Assets/BuildTimestampDisplay`
+- `https://github.com/Gigacee/build-timestamp-display-for-unity.git?path=Assets/BuildTimestampDisplay`
 
 ### Manual
 
-Copy `Assets/BuildTimestampDisplay/` to your project.
+- Copy `Assets/BuildTimestampDisplay/` to your project.
