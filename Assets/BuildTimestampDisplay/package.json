@@ -17,7 +17,7 @@
         {
             "displayName": "Sample",
             "description": "Display the timestamp in the lower left corner of the screen.",
-            "path": "Samples~/BuildTimestampDisplay"
+            "path": "Samples~"
         }
     ]
 }
