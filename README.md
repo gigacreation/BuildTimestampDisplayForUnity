@@ -13,3 +13,13 @@ After the game is built, the timestamp field in `Assets/BuildTimestampDisplay/Bu
 When you attach BuildTimestampDisplay.cs to uGUI Text and play the scene, the build timestamp is displayed on the screen.
 
 You can also use this value for any other purpose you like.
+
+## Installation
+
+### Unity Package Manager
+
+`https://github.com/Gigacee/build-timestamp-display-for-unity.git?path=Assets/BuildTimestampDisplay`
+
+### Manual
+
+Copy `Assets/BuildTimestampDisplay/` to your project.
