@@ -4,6 +4,10 @@
 
 Display the timestamp the game was built.
 
+## 日本語による説明 / Explanation in Japanese
+
+[Unity のビルド時刻を表示するスクリプトを公開しました](https://blog.gigacreation.jp/entry/2020/10/10/123134)
+
 ## Usage
 
 1. Build your game.
