@@ -1,4 +1,4 @@
-# Build timestamp display for Unity
+# Build Timestamp Display for Unity
 
 ![build-timestamp-display-for-unity](https://user-images.githubusercontent.com/5264444/95020949-2c746f80-06a9-11eb-866d-0a808459a930.png)
 
