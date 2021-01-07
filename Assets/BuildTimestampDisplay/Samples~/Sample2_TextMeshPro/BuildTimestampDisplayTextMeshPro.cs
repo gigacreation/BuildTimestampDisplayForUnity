@@ -4,14 +4,11 @@ using UnityEngine;
 namespace BuildTimestampDisplay.Sample2
 {
     [RequireComponent(typeof(TextMeshProUGUI)), AddComponentMenu("Gigacee/Build Timestamp Display TextMesh Pro")]
-    public class BuildTimestampDisplayTextMeshPro : MonoBehaviour
+    public class BuildTimestampDisplayTextMeshPro : BuildTimestampDisplay
     {
-        [SerializeField] BuildTimestamp buildTimestamp;
-
-        void Start()
+        protected override void Start()
         {
-            GetComponent<TextMeshProUGUI>()
-                .SetText(buildTimestamp ? buildTimestamp.timestamp : "BuildTimestamp is missing");
+            GetComponent<TextMeshProUGUI>().SetText(GetTimestampString());
         }
     }
 }

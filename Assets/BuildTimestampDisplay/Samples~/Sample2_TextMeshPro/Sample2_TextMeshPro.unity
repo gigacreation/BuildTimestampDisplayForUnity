@@ -408,7 +408,7 @@ GameObject:
   - component: {fileID: 1060363400}
   - component: {fileID: 1060363399}
   m_Layer: 5
-  m_Name: TextMeshProUgui
+  m_Name: BuildTimestampDisplay
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -542,6 +542,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buildTimestamp: {fileID: 11400000, guid: 5557ca8a6d7b4424e96b8682c0f36b79, type: 2}
+  format: yyyy/MM/dd hh:mm:ss
+  utcOffsetHours: 9
 --- !u!1 &1607569189
 GameObject:
   m_ObjectHideFlags: 0

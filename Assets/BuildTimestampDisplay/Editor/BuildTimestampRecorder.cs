@@ -21,31 +21,25 @@ namespace BuildTimestampDisplay.Editor
                 Directory.CreateDirectory(DEST_DIR_PATH);
             }
 
-            var buildInfo = AssetDatabase.LoadAssetAtPath<BuildTimestamp>($"{DEST_DIR_PATH}/{DEST_FILENAME}");
+            var buildTimestamp = AssetDatabase.LoadAssetAtPath<BuildTimestamp>($"{DEST_DIR_PATH}/{DEST_FILENAME}");
 
-            if (buildInfo == null)
+            if (buildTimestamp == null)
             {
-                buildInfo = ScriptableObject.CreateInstance<BuildTimestamp>();
-                AssetDatabase.CreateAsset(buildInfo, $"{DEST_DIR_PATH}/{DEST_FILENAME}");
+                buildTimestamp = ScriptableObject.CreateInstance<BuildTimestamp>();
+                AssetDatabase.CreateAsset(buildTimestamp, $"{DEST_DIR_PATH}/{DEST_FILENAME}");
             }
 
-            var localTime = TimeZoneInfo.ConvertTimeFromUtc(report.summary.buildStartedAt, TimeZoneInfo.Local);
-            buildInfo.timestamp = ConvertDateTimeIntoString(localTime);
+            var dateTime = TimeZoneInfo.ConvertTimeFromUtc(report.summary.buildStartedAt, TimeZoneInfo.Utc);
 
-            EditorUtility.SetDirty(buildInfo);
+            buildTimestamp.utcYear = dateTime.Year;
+            buildTimestamp.utcMonth = dateTime.Month;
+            buildTimestamp.utcDay = dateTime.Day;
+            buildTimestamp.utcHour = dateTime.Hour;
+            buildTimestamp.utcMinute = dateTime.Minute;
+            buildTimestamp.utcSecond = dateTime.Second;
+
+            EditorUtility.SetDirty(buildTimestamp);
             AssetDatabase.SaveAssets();
-        }
-
-        static string ConvertDateTimeIntoString(DateTime dateTime)
-        {
-            var year = dateTime.Year;
-            var month = dateTime.Month;
-            var day = dateTime.Day;
-            var hour = dateTime.Hour;
-            var minute = dateTime.Minute;
-            var second = dateTime.Second;
-
-            return $"{year:D4}/{month:D2}/{day:D2} {hour:D2}:{minute:D2}:{second:D2}";
         }
     }
 }

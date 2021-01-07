@@ -1,5 +1,9 @@
 # Change Log
 
+## 1.1.0 (2021-01-08)
+
+- Add formatting and time difference specification
+
 ## 1.0.1 (2021-01-07)
 
 - Add null check

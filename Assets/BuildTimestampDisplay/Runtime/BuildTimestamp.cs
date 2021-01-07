@@ -4,6 +4,11 @@ namespace BuildTimestampDisplay
 {
     public class BuildTimestamp : ScriptableObject
     {
-        public string timestamp;
+        public int utcYear;
+        public int utcMonth;
+        public int utcDay;
+        public int utcHour;
+        public int utcMinute;
+        public int utcSecond;
     }
 }
