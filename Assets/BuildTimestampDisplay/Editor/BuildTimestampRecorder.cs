@@ -30,22 +30,22 @@ namespace BuildTimestampDisplay.Editor
             }
 
             var localTime = TimeZoneInfo.ConvertTimeFromUtc(report.summary.buildStartedAt, TimeZoneInfo.Local);
-            buildInfo.timestamp = ConvertDateTimeIntoText(localTime);
+            buildInfo.timestamp = ConvertDateTimeIntoString(localTime);
 
             EditorUtility.SetDirty(buildInfo);
             AssetDatabase.SaveAssets();
         }
 
-        static string ConvertDateTimeIntoText(DateTime dateTime)
+        static string ConvertDateTimeIntoString(DateTime dateTime)
         {
-            var year = $"{dateTime.Year:D4}";
-            var month = $"{dateTime.Month:D2}";
-            var day = $"{dateTime.Day:D2}";
-            var hour = $"{dateTime.Hour:D2}";
-            var minute = $"{dateTime.Minute:D2}";
-            var second = $"{dateTime.Second:D2}";
+            var year = dateTime.Year;
+            var month = dateTime.Month;
+            var day = dateTime.Day;
+            var hour = dateTime.Hour;
+            var minute = dateTime.Minute;
+            var second = dateTime.Second;
 
-            return year + "/" + month + "/" + day + " " + hour + ":" + minute + ":" + second;
+            return $"{year:D4}/{month:D2}/{day:D2} {hour:D2}:{minute:D2}:{second:D2}";
         }
     }
 }

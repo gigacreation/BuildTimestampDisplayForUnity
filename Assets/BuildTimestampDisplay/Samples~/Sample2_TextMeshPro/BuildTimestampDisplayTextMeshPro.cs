@@ -10,7 +10,8 @@ namespace BuildTimestampDisplay.Sample2
 
         void Start()
         {
-            GetComponent<TextMeshProUGUI>().SetText(buildTimestamp.timestamp);
+            GetComponent<TextMeshProUGUI>()
+                .SetText(buildTimestamp ? buildTimestamp.timestamp : "BuildTimestamp is missing");
         }
     }
 }

@@ -10,7 +10,7 @@ namespace BuildTimestampDisplay
 
         void Start()
         {
-            GetComponent<Text>().text = buildTimestamp.timestamp;
+            GetComponent<Text>().text = buildTimestamp ? buildTimestamp.timestamp : "BuildTimestamp is missing";
         }
     }
 }
