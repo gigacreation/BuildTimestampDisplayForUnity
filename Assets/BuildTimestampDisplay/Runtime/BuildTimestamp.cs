@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Globalization;
+using UnityEngine;
 
 namespace BuildTimestampDisplay
 {
@@ -10,5 +12,18 @@ namespace BuildTimestampDisplay
         public int utcHour;
         public int utcMinute;
         public int utcSecond;
+
+        public override string ToString()
+        {
+            return new DateTime(utcYear, utcMonth, utcDay, utcHour, utcMinute, utcSecond)
+                .ToString(CultureInfo.CurrentCulture);
+        }
+
+        public string ToString(string format, float utcOffsetHours)
+        {
+            return new DateTime(utcYear, utcMonth, utcDay, utcHour, utcMinute, utcSecond)
+                .AddMinutes(Mathf.RoundToInt(utcOffsetHours * 60f))
+                .ToString(format);
+        }
     }
 }

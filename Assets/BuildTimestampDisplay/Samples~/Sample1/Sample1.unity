@@ -404,9 +404,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1060363398}
-  - component: {fileID: 1060363401}
   - component: {fileID: 1060363400}
   - component: {fileID: 1060363399}
+  - component: {fileID: 1060363401}
   m_Layer: 5
   m_Name: BuildTimestampDisplay
   m_TagString: Untagged
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buildTimestamp: {fileID: 11400000, guid: 5557ca8a6d7b4424e96b8682c0f36b79, type: 2}
   format: yyyy/MM/dd hh:mm:ss
-  utcOffsetHours: 9
+  utcOffsetHours: 0
 --- !u!1 &1607569189
 GameObject:
   m_ObjectHideFlags: 0
