@@ -19,10 +19,10 @@ namespace BuildTimestampDisplay
                 .ToString(CultureInfo.CurrentCulture);
         }
 
-        public string ToString(string format, float utcOffsetHours)
+        public string ToString(string format, double utcOffsetHours)
         {
             return new DateTime(utcYear, utcMonth, utcDay, utcHour, utcMinute, utcSecond)
-                .AddMinutes(Mathf.RoundToInt(utcOffsetHours * 60f))
+                .AddHours(utcOffsetHours)
                 .ToString(format);
         }
     }

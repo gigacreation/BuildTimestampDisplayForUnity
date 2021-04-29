@@ -7,15 +7,14 @@ namespace BuildTimestampDisplay
     public class BuildTimestampDisplay : MonoBehaviour
     {
         [SerializeField] BuildTimestamp buildTimestamp;
-        [SerializeField] string format = "yyyy/MM/dd hh:mm:ss";
+        [SerializeField] string format = "yyyy/MM/dd HH:mm:ss";
         [SerializeField] float utcOffsetHours;
 
         void Start()
         {
-            GetComponent<Text>().text =
-                buildTimestamp
-                    ? buildTimestamp.ToString(format, utcOffsetHours)
-                    : "BuildTimestamp is missing";
+            GetComponent<Text>().text = buildTimestamp
+                ? buildTimestamp.ToString(format, utcOffsetHours)
+                : "BuildTimestamp is missing";
         }
     }
 }

@@ -1,8 +1,12 @@
 # Change Log
 
+## 1.1.2 (2021-04-29)
+
+- Fix the default hour display using a 12-hour clock
+
 ## 1.1.1 (2021-01-08)
 
-- Add ToString method to ScriptableObject
+- Add `ToString()` method to ScriptableObject
 
 ## 1.1.0 (2021-01-08)
 
