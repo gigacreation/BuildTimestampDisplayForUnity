@@ -14,7 +14,7 @@ Display the timestamp the game was built.
 2. `Assets/BuildTimestampDisplay/BuildTimestamp.asset` will be generated. It has fields of build started time.
 ![image](https://user-images.githubusercontent.com/5264444/103910707-7d807d80-5148-11eb-8ddc-ec4cdec380f0.png)
 3. Attach `BuildTimestampDisplay.cs` to uGUI Text and set `BuildTimestamp.asset`.
-![image](https://user-images.githubusercontent.com/5264444/103911108-f8499880-5148-11eb-84bd-d3bc067deac1.png)
+![image](https://user-images.githubusercontent.com/5264444/116574519-c2732e80-a948-11eb-8c3b-a891685a170f.png)
     - You can attach it by clicking `Add Component` > `Gigacee` > `Build Timestamp Display`.
     - You can change text format and UTC offset.
 4. Play the scene and the build timestamp is displayed on the screen!
