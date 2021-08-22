@@ -1,6 +1,6 @@
 # Build Timestamp Display for Unity
 
-![build-timestamp-display-for-unity](https://user-images.githubusercontent.com/5264444/103909925-9d637180-5147-11eb-957f-4c880eb90744.png)
+![BuildTimestampDisplayForUnity](https://user-images.githubusercontent.com/5264444/103909925-9d637180-5147-11eb-957f-4c880eb90744.png)
 
 Display the timestamp the game was built.
 
@@ -31,7 +31,7 @@ You can use this script with TextMesh Pro. Import `Sample2 - TextMesh Pro` from 
 
 ### Package Manager
 
-- `https://github.com/Gigacee/build-timestamp-display-for-unity.git?path=Assets/BuildTimestampDisplay`
+- `https://github.com/gigacee/BuildTimestampDisplayForUnity.git?path=Assets/BuildTimestampDisplay`
 
 ### Manual
 

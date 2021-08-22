@@ -9,27 +9,27 @@ namespace BuildTimestampDisplay.Editor
 {
     public class BuildTimestampRecorder : IPreprocessBuildWithReport
     {
-        const string DEST_DIR_PATH = "Assets/BuildTimestampDisplay";
-        const string DEST_FILENAME = "BuildTimestamp.asset";
+        private const string DestDirPath = "Assets/BuildTimestampDisplay";
+        private const string DestFilename = "BuildTimestamp.asset";
 
         public int callbackOrder => 0;
 
         public void OnPreprocessBuild(BuildReport report)
         {
-            if (!Directory.Exists(DEST_DIR_PATH))
+            if (!Directory.Exists(DestDirPath))
             {
-                Directory.CreateDirectory(DEST_DIR_PATH);
+                Directory.CreateDirectory(DestDirPath);
             }
 
-            var buildTimestamp = AssetDatabase.LoadAssetAtPath<BuildTimestamp>($"{DEST_DIR_PATH}/{DEST_FILENAME}");
+            var buildTimestamp = AssetDatabase.LoadAssetAtPath<BuildTimestamp>($"{DestDirPath}/{DestFilename}");
 
             if (buildTimestamp == null)
             {
                 buildTimestamp = ScriptableObject.CreateInstance<BuildTimestamp>();
-                AssetDatabase.CreateAsset(buildTimestamp, $"{DEST_DIR_PATH}/{DEST_FILENAME}");
+                AssetDatabase.CreateAsset(buildTimestamp, $"{DestDirPath}/{DestFilename}");
             }
 
-            var dateTime = TimeZoneInfo.ConvertTimeFromUtc(report.summary.buildStartedAt, TimeZoneInfo.Utc);
+            DateTime dateTime = TimeZoneInfo.ConvertTimeFromUtc(report.summary.buildStartedAt, TimeZoneInfo.Utc);
 
             buildTimestamp.utcYear = dateTime.Year;
             buildTimestamp.utcMonth = dateTime.Month;
