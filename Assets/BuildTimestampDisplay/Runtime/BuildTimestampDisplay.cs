@@ -7,14 +7,14 @@ namespace BuildTimestampDisplay
     [AddComponentMenu("Gigacee/Build Timestamp Display")]
     public class BuildTimestampDisplay : MonoBehaviour
     {
-        [SerializeField] private BuildTimestamp buildTimestamp;
-        [SerializeField] private string format = "yyyy/MM/dd HH:mm:ss";
-        [SerializeField] private float utcOffsetHours;
+        [SerializeField] private BuildTimestamp _buildTimestamp;
+        [SerializeField] private string _format = "yyyy/MM/dd HH:mm:ss";
+        [SerializeField] private float _utcOffsetHours;
 
         private void Start()
         {
-            GetComponent<Text>().text = buildTimestamp
-                ? buildTimestamp.ToString(format, utcOffsetHours)
+            GetComponent<Text>().text = _buildTimestamp
+                ? _buildTimestamp.ToString(_format, _utcOffsetHours)
                 : "BuildTimestamp is missing";
         }
     }

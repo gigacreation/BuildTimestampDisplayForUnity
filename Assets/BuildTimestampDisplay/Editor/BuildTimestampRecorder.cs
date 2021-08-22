@@ -31,12 +31,12 @@ namespace BuildTimestampDisplay.Editor
 
             DateTime dateTime = TimeZoneInfo.ConvertTimeFromUtc(report.summary.buildStartedAt, TimeZoneInfo.Utc);
 
-            buildTimestamp.utcYear = dateTime.Year;
-            buildTimestamp.utcMonth = dateTime.Month;
-            buildTimestamp.utcDay = dateTime.Day;
-            buildTimestamp.utcHour = dateTime.Hour;
-            buildTimestamp.utcMinute = dateTime.Minute;
-            buildTimestamp.utcSecond = dateTime.Second;
+            buildTimestamp.UtcYear = dateTime.Year;
+            buildTimestamp.UtcMonth = dateTime.Month;
+            buildTimestamp.UtcDay = dateTime.Day;
+            buildTimestamp.UtcHour = dateTime.Hour;
+            buildTimestamp.UtcMinute = dateTime.Minute;
+            buildTimestamp.UtcSecond = dateTime.Second;
 
             EditorUtility.SetDirty(buildTimestamp);
             AssetDatabase.SaveAssets();

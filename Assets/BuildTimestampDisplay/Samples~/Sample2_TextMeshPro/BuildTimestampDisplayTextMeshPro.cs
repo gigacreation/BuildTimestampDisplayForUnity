@@ -3,18 +3,19 @@ using UnityEngine;
 
 namespace BuildTimestampDisplay.Sample2
 {
-    [RequireComponent(typeof(TextMeshProUGUI)), AddComponentMenu("Gigacee/Build Timestamp Display TextMesh Pro")]
+    [RequireComponent(typeof(TextMeshProUGUI))]
+    [AddComponentMenu("Gigacee/Build Timestamp Display TextMesh Pro")]
     public class BuildTimestampDisplayTextMeshPro : MonoBehaviour
     {
-        [SerializeField] BuildTimestamp buildTimestamp;
-        [SerializeField] string format = "yyyy/MM/dd hh:mm:ss";
-        [SerializeField] float utcOffsetHours;
+        [SerializeField] private BuildTimestamp _buildTimestamp;
+        [SerializeField] private string _format = "yyyy/MM/dd hh:mm:ss";
+        [SerializeField] private float _utcOffsetHours;
 
-        void Start()
+        private void Start()
         {
             GetComponent<TextMeshProUGUI>().SetText(
-                buildTimestamp
-                    ? buildTimestamp.ToString(format, utcOffsetHours)
+                _buildTimestamp
+                    ? _buildTimestamp.ToString(_format, _utcOffsetHours)
                     : "BuildTimestamp is missing"
             );
         }

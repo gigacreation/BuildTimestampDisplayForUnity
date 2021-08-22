@@ -6,22 +6,22 @@ namespace BuildTimestampDisplay
 {
     public class BuildTimestamp : ScriptableObject
     {
-        public int utcYear;
-        public int utcMonth;
-        public int utcDay;
-        public int utcHour;
-        public int utcMinute;
-        public int utcSecond;
+        public int UtcYear;
+        public int UtcMonth;
+        public int UtcDay;
+        public int UtcHour;
+        public int UtcMinute;
+        public int UtcSecond;
 
         public override string ToString()
         {
-            return new DateTime(utcYear, utcMonth, utcDay, utcHour, utcMinute, utcSecond)
+            return new DateTime(UtcYear, UtcMonth, UtcDay, UtcHour, UtcMinute, UtcSecond)
                 .ToString(CultureInfo.CurrentCulture);
         }
 
         public string ToString(string format, double utcOffsetHours)
         {
-            return new DateTime(utcYear, utcMonth, utcDay, utcHour, utcMinute, utcSecond)
+            return new DateTime(UtcYear, UtcMonth, UtcDay, UtcHour, UtcMinute, UtcSecond)
                 .AddHours(utcOffsetHours)
                 .ToString(format);
         }
