@@ -4,7 +4,7 @@ This package allows you to display the latest build timestamp.
 
 ![Demo](https://user-images.githubusercontent.com/5264444/103909925-9d637180-5147-11eb-957f-4c880eb90744.png)
 
-## :warning: THE NAMES OF THE PACKAGE AND NAMESPACES HAS BEEN CHANGED IN THE LATEST VERSION! :warning:
+## :warning: THE PACKAGE AND NAMESPACE NAMES HAVE BEEN CHANGED IN THE LATEST VERSION! :warning:
 
 - Ver. 2.x (Currect)
     - package name: `jp.gigacreation.tools.buildtimestampdisplay"`
