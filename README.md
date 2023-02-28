@@ -7,10 +7,10 @@ This package allows you to display the latest build timestamp.
 ## :warning: THE PACKAGE AND NAMESPACE NAMES HAVE BEEN CHANGED IN THE LATEST VERSION! :warning:
 
 - Ver. 2.x (Currect)
-    - package name: `jp.gigacreation.tools.buildtimestampdisplay"`
+    - package name: `jp.gigacreation.tools.buildtimestampdisplay`
     - namespace: `GigaCreation.Tools.BuildTimestampDisplay`
 - Ver. 1.x
-    - package name: `com.gigacee.buildtimestampdisplay"`
+    - package name: `com.gigacee.buildtimestampdisplay`
     - namespace: `BuildTimestampDisplay`
 
 ## 日本語による説明 / Explanation in Japanese

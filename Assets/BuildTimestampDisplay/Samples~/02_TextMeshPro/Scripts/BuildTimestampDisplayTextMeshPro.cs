@@ -21,7 +21,18 @@ namespace GigaCreation.Tools.BuildTimestampDisplay.Sample02
         [SerializeField] private string _format = "yyyy/MM/dd HH:mm:ss";
         [SerializeField] private float _utcOffsetHours;
 
-        private TextMeshProUGUI Label => _label ??= GetComponent<TextMeshProUGUI>();
+        private TextMeshProUGUI Label
+        {
+            get
+            {
+                if (_label == null)
+                {
+                    _label = GetComponent<TextMeshProUGUI>();
+                }
+
+                return _label;
+            }
+        }
 
         private void Start()
         {

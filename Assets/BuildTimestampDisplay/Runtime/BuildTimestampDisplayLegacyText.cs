@@ -21,7 +21,18 @@ namespace GigaCreation.Tools.BuildTimestampDisplay
         [SerializeField] private string _format = "yyyy/MM/dd HH:mm:ss";
         [SerializeField] private float _utcOffsetHours;
 
-        private Text Label => _label ??= GetComponent<Text>();
+        private Text Label
+        {
+            get
+            {
+                if (_label == null)
+                {
+                    _label = GetComponent<Text>();
+                }
+
+                return _label;
+            }
+        }
 
         private void Start()
         {
