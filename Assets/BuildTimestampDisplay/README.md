@@ -2,7 +2,7 @@
 
 This package allows you to display the latest build timestamp.
 
-![Demo](https://user-images.githubusercontent.com/5264444/103909925-9d637180-5147-11eb-957f-4c880eb90744.png)
+![Demo](https://user-images.githubusercontent.com/5264444/221815340-64b9bf2c-1b11-4390-845e-937102f98af9.jpg)
 
 ## :warning: THE PACKAGE AND NAMESPACE NAMES HAVE BEEN CHANGED IN THE LATEST VERSION! :warning:
 
@@ -21,10 +21,10 @@ This package allows you to display the latest build timestamp.
 
 1. Build your game.
 1. `Assets/BuildTimestampDisplay/BuildTimestamp.asset` will be generated. It has fields of build started time.
-![image](https://user-images.githubusercontent.com/5264444/103910707-7d807d80-5148-11eb-8ddc-ec4cdec380f0.png)
+![BuildTimestampAsset](https://user-images.githubusercontent.com/5264444/221815939-31b7211a-92cf-48ab-b2f2-8ec0c7c67b5e.jpg)
 1. Create a GameObject in a canvas and attach `BuildTimestampDisplayLegacyText.cs` to it.
 1. Click `Set BuildTimestamp Asset` button in Inspector.
-![image](https://user-images.githubusercontent.com/5264444/103911108-f8499880-5148-11eb-84bd-d3bc067deac1.png)
+![SetBuildTimestampAssetButton](https://user-images.githubusercontent.com/5264444/221816887-8158c410-3023-48a5-8981-b849f71c5500.jpg)
     - You can attach it by clicking `Add Component` > `GIGA CREATION` > `Build Timestamp Display Legacy Text`.
     - You can change text format and UTC offset.
 1. Play the scene or rebuild the game and you can see the build timestamp on the screen!
