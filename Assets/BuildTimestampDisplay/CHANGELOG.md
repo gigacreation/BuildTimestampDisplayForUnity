@@ -1,5 +1,10 @@
 # Change Log
 
+## 2.0.0 (2023-02-28)
+
+- Change the names of the package, namespaces, and classes
+- Fix the sample using TextMesh Pro
+
 ## 1.1.2 (2021-04-29)
 
 - Fix the default hour display using a 12-hour clock
@@ -18,4 +23,4 @@
 
 ## 1.0.0 (2020-10-05)
 
-- First release
+- Initial release

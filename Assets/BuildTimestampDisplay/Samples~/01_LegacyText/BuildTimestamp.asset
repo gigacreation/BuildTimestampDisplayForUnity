@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85da0d7fc3c35f44d89ca3fb294fb10f, type: 3}
   m_Name: BuildTimestamp
   m_EditorClassIdentifier: 
-  utcYear: 1970
-  utcMonth: 1
-  utcDay: 1
-  utcHour: 0
-  utcMinute: 0
-  utcSecond: 0
+  UtcYear: 1970
+  UtcMonth: 1
+  UtcDay: 1
+  UtcHour: 0
+  UtcMinute: 0
+  UtcSecond: 0

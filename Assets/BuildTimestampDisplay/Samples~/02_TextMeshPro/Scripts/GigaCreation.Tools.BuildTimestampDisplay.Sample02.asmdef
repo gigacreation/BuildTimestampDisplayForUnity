@@ -1,6 +1,10 @@
 {
-    "name": "BuildTimestampDisplay",
-    "references": [],
+    "name": "GigaCreation.Tools.BuildTimestampDisplay.Sample02",
+    "rootNamespace": "",
+    "references": [
+        "GUID:61abea01cd112fb42857d3ad87290142",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

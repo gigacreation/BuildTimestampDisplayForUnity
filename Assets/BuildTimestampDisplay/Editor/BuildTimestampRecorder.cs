@@ -5,7 +5,7 @@ using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
 using UnityEngine;
 
-namespace BuildTimestampDisplay.Editor
+namespace GigaCreation.Tools.BuildTimestampDisplay.Editor
 {
     public class BuildTimestampRecorder : IPreprocessBuildWithReport
     {

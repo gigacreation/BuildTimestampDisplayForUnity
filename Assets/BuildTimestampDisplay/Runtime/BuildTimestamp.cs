@@ -2,7 +2,7 @@
 using System.Globalization;
 using UnityEngine;
 
-namespace BuildTimestampDisplay
+namespace GigaCreation.Tools.BuildTimestampDisplay
 {
     public class BuildTimestamp : ScriptableObject
     {
