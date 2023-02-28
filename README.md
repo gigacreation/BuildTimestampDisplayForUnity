@@ -4,6 +4,15 @@ This package allows you to display the latest build timestamp.
 
 ![Build Timestamp Display for Unity](https://user-images.githubusercontent.com/5264444/103909925-9d637180-5147-11eb-957f-4c880eb90744.png)
 
+## :warning: THE NAMES OF THE PACKAGE AND NAMESPACES HAS BEEN CHANGED IN THE LATEST VERSION! :warning:
+
+- Ver. 2.x (Currect)
+    - package name: `jp.gigacreation.tools.buildtimestampdisplay"`
+    - namespace: `GigaCreation.Tools.BuildTimestampDisplay`
+- Ver. 1.x
+    - package name: `com.gigacee.buildtimestampdisplay"`
+    - namespace: `BuildTimestampDisplay`
+
 ## 日本語による説明 / Explanation in Japanese
 
 [Unity のビルド時刻を表示するスクリプトを公開しました](https://blog.gigacreation.jp/entry/2020/10/10/123134)

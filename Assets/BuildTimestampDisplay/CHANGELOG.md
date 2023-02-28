@@ -3,6 +3,7 @@
 ## 2.0.0 (2023-02-28)
 
 - Change the names of the package, namespaces, and classes
+- Add the button to set the BuildTimestamp asset in display components
 - Fix the sample using TextMesh Pro
 
 ## 1.1.2 (2021-04-29)

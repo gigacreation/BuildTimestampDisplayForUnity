@@ -1,0 +1,18 @@
+{
+    "name": "GigaCreation.Tools.BuildTimestampDisplay.Sample02.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:055cf5f02b395a94ea021c50df844de1"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
