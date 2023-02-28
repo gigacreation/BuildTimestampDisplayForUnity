@@ -2,7 +2,7 @@
 
 This package allows you to display the latest build timestamp.
 
-![Build Timestamp Display for Unity](https://user-images.githubusercontent.com/5264444/103909925-9d637180-5147-11eb-957f-4c880eb90744.png)
+![Demo](https://user-images.githubusercontent.com/5264444/103909925-9d637180-5147-11eb-957f-4c880eb90744.png)
 
 ## :warning: THE NAMES OF THE PACKAGE AND NAMESPACES HAS BEEN CHANGED IN THE LATEST VERSION! :warning:
 
@@ -22,9 +22,9 @@ This package allows you to display the latest build timestamp.
 1. Build your game.
 2. `Assets/BuildTimestampDisplay/BuildTimestamp.asset` will be generated. It has fields of build started time.
 ![image](https://user-images.githubusercontent.com/5264444/103910707-7d807d80-5148-11eb-8ddc-ec4cdec380f0.png)
-3. Attach `BuildTimestampDisplay.cs` to uGUI Text and set `BuildTimestamp.asset`.
+3. Attach `BuildTimestampDisplayLegacyText.cs` to uGUI Text and click `Set BuildTimestamp Asset` button.
 ![image](https://user-images.githubusercontent.com/5264444/103911108-f8499880-5148-11eb-84bd-d3bc067deac1.png)
-    - You can attach it by clicking `Add Component` > `GIGA CREATION` > `Build Timestamp Display`.
+    - You can attach it by clicking `Add Component` > `GIGA CREATION` > `Build Timestamp Display Legacy Text`.
     - You can change text format and UTC offset.
 4. Play the scene and the build timestamp is displayed on the screen!
 
@@ -32,9 +32,9 @@ This package allows you to display the latest build timestamp.
 
 :memo: You can also use `BuildTimestamp.asset` for any other purpose you like :wink:
 
-### Tips
+## TextMesh Pro?
 
-You can use this script with TextMesh Pro. Import the sample `02 - TextMesh Pro` from the Package Manager window.
+Of course, you can also use this package with TextMesh Pro! Please check `BuildTimestampDisplayTextMeshPro.cs` that included in `02 - TextMesh Pro` sample (you can import samples from the Package Manager window).
 
 ## Installation
 
