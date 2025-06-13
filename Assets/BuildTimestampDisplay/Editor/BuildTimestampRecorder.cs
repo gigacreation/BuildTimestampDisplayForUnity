@@ -16,6 +16,13 @@ namespace GigaCreation.Tools.BuildTimestampDisplay.Editor
 
         public void OnPreprocessBuild(BuildReport report)
         {
+            RecordBuildTimestamp(report.summary.buildStartedAt);
+        }
+
+        public static void RecordBuildTimestamp(DateTime buildStartedAt)
+        {
+            DateTime dateTime = TimeZoneInfo.ConvertTimeFromUtc(buildStartedAt, TimeZoneInfo.Utc);
+
             if (!Directory.Exists(DestDirPath))
             {
                 Directory.CreateDirectory(DestDirPath);
@@ -28,8 +35,6 @@ namespace GigaCreation.Tools.BuildTimestampDisplay.Editor
                 buildTimestamp = ScriptableObject.CreateInstance<BuildTimestamp>();
                 AssetDatabase.CreateAsset(buildTimestamp, $"{DestDirPath}/{DestFilename}");
             }
-
-            DateTime dateTime = TimeZoneInfo.ConvertTimeFromUtc(report.summary.buildStartedAt, TimeZoneInfo.Utc);
 
             buildTimestamp.UtcYear = dateTime.Year;
             buildTimestamp.UtcMonth = dateTime.Month;
